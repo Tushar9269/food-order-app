@@ -1,14 +1,15 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {AppProvider} from "@/components/AppContext";
+import { Roboto } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import Header from "@/components/layout/Header";
+import {Toaster} from "react-hot-toast";
 
-const geistSans = Geist({
+
+const roboto = Roboto({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ['400','500','700'],
 });
 
 export const metadata = {
@@ -18,11 +19,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" className="scroll-smooth">
+      <body className={`${roboto.className} antialiased`}>
+        <main className="max-w-4xl mx-auto p-4">
+          <AppProvider>
+          <Toaster/>
+          <Header />
+          {children}
+          </AppProvider>
+        </main>
       </body>
     </html>
   );
