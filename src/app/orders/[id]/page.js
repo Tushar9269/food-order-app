@@ -31,7 +31,7 @@ export default function OrderPage() {
             });
           })
         }
-      }, []);
+      }, [clearCart,id]);
 
       let subtotal = 0;
     if (order?.cartProducts) {
@@ -61,7 +61,7 @@ export default function OrderPage() {
             <div className="text-right py-2 text-gray-500">
               Total:
               <span className="text-black font-bold inline-block w-8">
-                ${subtotal}
+                ₹{subtotal}
               </span>
             </div>
           </div>

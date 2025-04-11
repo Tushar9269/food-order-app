@@ -15,10 +15,13 @@ export default function Home() {
         />
         <div className="text-gray-500 max-w-md mx-auto mt-4 flex flex-col gap-4">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni minima odit recusandae. Illum ipsa non repudiandae? Eum ipsam iste quos suscipit tempora? Aperiam esse fugiat inventore laboriosam officiis quam rem!
+          Welcome to Northeast Haos Canteen, where tradition meets flavor! We bring you the authentic taste of Northeast India, serving dishes that celebrate our rich culinary heritage.          </p>
+          <p>
+          At Northeast Haos Canteen, we believe in using fresh, locally sourced ingredients to craft meals that feel like home. Whether you’re craving a comforting bowl of smoked meat curry, aromatic bamboo shoot dishes, or classic street-style delights, we’ve got something to satisfy your taste buds.
           </p>
-          <p>At consectetur delectus ducimus est facere iure molestias obcaecati quaerat vitae voluptate? Aspernatur dolor explicabo iste minus molestiae pariatur provident quibusdam saepe?</p>
-          <p>Laborum molestias neque nulla obcaecati odio quia quod reprehenderit sit vitae voluptates? Eos, tenetur.</p>
+          <p>
+          Join us for a meal and experience the warmth of our hospitality, the richness of our culture, and the unforgettable flavors of the Northeast.
+          </p>
         </div>
       </section>
       <section className="text-center my-8" id="contact">

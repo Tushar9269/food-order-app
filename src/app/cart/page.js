@@ -115,6 +115,7 @@ export default function CartPage(){
            key={index}
            product={product}
            onRemove={removeCartProduct}
+           index={index}
            />
           ))}
           <div className="py-2 text-right pr-17">
